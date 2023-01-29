@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .features-list {
+        column-gap: 24px;   
+    }
+    .features-item {
+        width: calc((100% - 32px) / 2);
+    }
+    .features-paragraph-title {
+        text-align: left;    
+    }
+    .team> .container {
+        width: 582px;
+    }
+    .team-members {
+        column-gap: 24px;
+        justify-content: center;
+    }
+    .team-item {
+        width: calc((100% - 48px) / 2);
+    }
+    .team-item> img {
+        width: 100%;
+    }
+    .customers> .container {
+        width: 582px;
+    }
+    .customers-list {
+        column-gap: 24px;
+    }
+    .customer-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+
+}

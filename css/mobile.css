@@ -1,0 +1,24 @@
+@media screen and (min-width: 480px) {
+.container {
+    max-width: 428px;
+}
+
+.team> .container {
+    width: 294px;
+}    
+}
+
+@media screen and (max-width: 1200px) {
+.pictures {
+    display: none;
+}
+.features-icons-item {
+    display: none;
+}
+}
+
+@media screen and (max-width: 768px) {
+.header-list, .contacts {
+    display: none;
+}    
+}
