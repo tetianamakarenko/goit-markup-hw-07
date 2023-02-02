@@ -80,18 +80,19 @@ img {
 .header > .container {
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
+    padding: 0 16px;
 }
 
 .header-navigation {
     display: flex;
-    align-items: center;
     margin-right: auto;
 }
 
 /* ----------Logo---------- */
 .logo-wrap {
-    margin-right: 76px;
+    padding: 24px 0;
+    margin-right: 118px;
 }
 
 .logo-first-part {
@@ -140,8 +141,6 @@ img {
 
 .contacts .link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
@@ -152,10 +151,12 @@ img {
 .contacts .link:hover {color: var(--btn-focur-color)}
 
 .contacts {
-    display: block;
-    gap: 40px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 4px;
 }
+
 .menu-open {
     width: 32px;
     height: 22px;
@@ -178,6 +179,11 @@ img {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: var(--first-title-color);
+    transition: opacity var(--transition), 
+    visibility var(--transition);
+}
+.mob-menu.is-hidden .container {
+    transform:  scaleY(0);
 }
 .mob-menu> .container {
     height: 100%;
@@ -185,13 +191,15 @@ img {
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
+    transform: translate(-50%, -50%), scaleY(1);
+    transition: transform var(--transition);
 }
 .menu-close {
     position: absolute;
     width: 24px;
     height: 24px;
-    right: 40px;
-    top: 40px;
+    right: 24px;
+    top: 24px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--btn-color);
@@ -199,7 +207,7 @@ img {
     margin-left: auto;
     transition: fill var(--transition), 
     background-color: var(--transition),
-    border var(var(--transition));
+    border var(--transition);
 }
 .menu-close:hover, .menu-close:focus {
     background-color: var(--btn-focur-color);
@@ -282,8 +290,6 @@ img {
 .mob-menu-soc-icon {
     fill: var(--background-color);
 }
-
-
 
 /* ----------Tittle in the center---------- */
 .hero-section {
@@ -635,9 +641,14 @@ margin-bottom: 72px;
 }
 .footer>.container {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 72px;
 }
 .footer-first-part {
-    margin-right: 120px;
+    display: block;
+    text-align: center;
 }
 
 .footer-logo-second-part {
@@ -650,17 +661,22 @@ margin-bottom: 72px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
     color: var(--btn-color);
+    text-align: left;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .footer-second-part {
-    margin-right: 80px;
 }
 
 .footer-third-part{
 }
 .subscribe-wrap {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;  
 }
 
 .footer-input-email {
@@ -714,6 +730,7 @@ margin-bottom: 72px;
     letter-spacing: 0.02em;
     color: var(--first-title-color);
     margin-bottom: 16px;
+    text-align: center;
     }
 
 .social-list {
@@ -756,9 +773,9 @@ margin-bottom: 72px;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
-    min-height: 578px;
-    padding: 24px;
+    width: 300px;
+    height: 100%;
+    padding: 24px 16px;
     background-color: var(--modal-color);
     border-radius: 4px;
     transform: translate(-50%, -50%) scaleY(1);
@@ -802,14 +819,13 @@ margin-bottom: 72px;
     padding-top: 48px;
     margin-bottom: 14px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: calc(24/16);
+    font-size: 12px;
+    line-height: calc(18/12);
     letter-spacing: 0.02em;
     color: var(--navigation-color)
 }
 
 .modal-form {
-    /* position: relative; */
 }
 
 .input-text {
@@ -859,7 +875,8 @@ margin-bottom: 72px;
     display: block;
     padding: 8px 16px;
     width: 100%;
-    height: 120px;
+    min-height: 100px;
+    max-height: 120px;
     background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;

@@ -2,6 +2,10 @@
 .container {
     max-width: 428px;
 }
+.menu-close {
+    right: 40px;
+    top: 40px;
+}
 .mob-menu-soc-list {
     gap: 56px;
 }
@@ -12,7 +16,21 @@
     }
 .team> .container {
     width: 294px;
-}    
+}
+.footer-paragraph {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.footer-input-email {
+    width: 396px;
+}
+.modal {
+    width: 392px;
+}
+.modal-title {
+    font-size: 16px;
+    line-height: calc(24/16);
+}     
 }
 
 @media screen and (max-width: 1199px) {
@@ -27,5 +45,5 @@
 @media screen and (max-width: 767px) {
 .header-list, .contacts {
     display: none;
-}    
+}
 }

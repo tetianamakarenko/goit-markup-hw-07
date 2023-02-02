@@ -2,6 +2,9 @@
     .container {
         max-width: 768px;
     }
+    .header .container {
+        max-width: 768px;
+    }
     .menu-open {
         display: none;
     }
@@ -18,7 +21,7 @@
             linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
             url(../images/people-office-tab-2x.jpg);
         }
-}
+    }
     .features-list {
         column-gap: 24px;   
     }
@@ -65,8 +68,35 @@
     .service-item {
         width: calc((100% - 56px) / 2);
     }
-/* .portfolio-picture> img {
-    width: 356px; 
-    height: 300px;
-} */
+    .footer>.container {
+        width: 582px;
+        display: flex;
+        column-gap: 24px;
+        row-gap: 72px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer-first-part {
+    }
+    .footer-paragraph {
+        margin-right: 0px;
+        margin-left: 0px;
+        max-width: 264px;
+    }
+    .subscribe-wrap {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .footer-third-part> .social-title {
+        text-align: left;
+    }
+    .footer-input-email {
+    max-width: 264px;
+    }
+    .modal {
+        width: 408px;
+        padding: 24px;
+        max-height: 586px;
+    }
 }
