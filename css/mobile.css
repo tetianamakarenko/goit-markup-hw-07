@@ -2,13 +2,20 @@
 .container {
     max-width: 428px;
 }
-
+.mob-menu-soc-list {
+    gap: 56px;
+}
+.hero-title {
+    max-width: 333px;
+    font-size: 36px;
+    line-height: calc(40/36);
+    }
 .team> .container {
     width: 294px;
 }    
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
 .pictures {
     display: none;
 }
@@ -17,7 +24,7 @@
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 .header-list, .contacts {
     display: none;
 }    

@@ -10,25 +10,23 @@
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
-    text-align: center;
-    margin: auto;
-    background-color: var(--navigation-color);
     background-image: 
     linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url(../images/people-office.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {background-image: 
+            linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+            url(../images/people-office-2x.jpg);
+        }
 }
 .hero-title {
     max-width: 496px;
-    font-weight: 700;
     font-size: 56px;
     line-height: calc(60/56);
-    letter-spacing: 0.02em;
-    color: var(--first-title-color);
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 48px;
 }
 .features-section {
@@ -61,18 +59,23 @@
 .customer-item {
     width: calc((100% - 120px) / 6);
 }
-
-
-
-/* .services-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.services-list {
     column-gap: 24px;
     row-gap: 48px;
-} */
 }
-
+.service-item {
+    width: calc((100% - 54px) / 3);
+}
+.portfolio {
+    padding-top: 96px;
+}
+.buttons-list {
+    gap: 24px;
+    margin-bottom: 72px;
+}
+/* .portfolio-picture> img {
+    width: 360px;
+} */
 
 
 

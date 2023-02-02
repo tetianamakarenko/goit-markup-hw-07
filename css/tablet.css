@@ -2,6 +2,23 @@
     .container {
         max-width: 768px;
     }
+    .menu-open {
+        display: none;
+    }
+    .hero-section {
+        padding-bottom: 108px;
+        background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-tab.jpg); 
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-section {background-image: 
+            linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+            url(../images/people-office-tab-2x.jpg);
+        }
+}
     .features-list {
         column-gap: 24px;   
     }
@@ -33,6 +50,23 @@
     .customer-item {
         width: calc((100% - 48px) / 3);
     }
-
-
+    .portfolio {
+        padding-top: 64px;
+    }
+    .buttons-list {
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 64px;
+        }
+    .services-list {
+        gap: 24px;
+        row-gap: 72px;
+    }
+    .service-item {
+        width: calc((100% - 56px) / 2);
+    }
+/* .portfolio-picture> img {
+    width: 356px; 
+    height: 300px;
+} */
 }
