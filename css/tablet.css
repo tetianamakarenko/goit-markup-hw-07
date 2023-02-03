@@ -72,6 +72,12 @@
         gap: 24px;
         row-gap: 72px;
     }
+    /* .services-list:not(:last-child) {
+        justify-content: center;
+    } */
+    /* .services-item:last-child {
+        justify-content: left;
+    } */
     .service-item {
         width: calc((100% - 56px) / 2);
     }
@@ -104,7 +110,5 @@
     .modal {
         width: 408px;
         padding: 24px;
-        /* max-height: 586px;
-        height: auto; */
     }
 }
