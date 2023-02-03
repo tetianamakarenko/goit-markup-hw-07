@@ -22,6 +22,13 @@
             url(../images/people-office-tab-2x.jpg);
         }
     }
+    .hero-title {
+        max-width: 496px;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: calc(60/56);
+        margin-bottom: 40px;
+    }
     .features-list {
         column-gap: 24px;   
     }
@@ -97,6 +104,7 @@
     .modal {
         width: 408px;
         padding: 24px;
-        max-height: 586px;
+        /* max-height: 586px;
+        height: auto; */
     }
 }

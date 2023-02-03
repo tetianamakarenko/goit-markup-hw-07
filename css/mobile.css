@@ -9,11 +9,13 @@
 .mob-menu-soc-list {
     gap: 56px;
 }
-.hero-title {
-    max-width: 333px;
+.mob-menu-contacts {
+    gap: 40px;
+}
+.mob-menu-contact-phone.link {
     font-size: 36px;
-    line-height: calc(40/36);
-    }
+    line-height: 40px;
+}
 .team> .container {
     width: 294px;
 }
@@ -25,12 +27,12 @@
     width: 396px;
 }
 .modal {
-    width: 392px;
+    overflow: auto;
 }
 .modal-title {
     font-size: 16px;
     line-height: calc(24/16);
-}     
+}   
 }
 
 @media screen and (max-width: 1199px) {
@@ -46,4 +48,11 @@
 .header-list, .contacts {
     display: none;
 }
+}
+
+@media screen and (max-height: 620px) {
+    .modal {
+        height: 96%;
+        overflow: auto;
+    }
 }

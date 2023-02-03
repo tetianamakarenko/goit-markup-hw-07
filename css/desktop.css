@@ -22,6 +22,8 @@
     flex-direction: row;
     align-items: center;    
     gap: 40px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .hero-section {
@@ -106,8 +108,9 @@
     gap: 24px;
     flex-direction: row;
 }
-.modal {
+/* .modal {
 max-height: 584px;
-}
+height: auto;
+} */
 
 }
